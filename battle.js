@@ -273,7 +273,7 @@
           enemy_robot = ref1$[i$];
           robot_hit = euclid_distance(b.x, b.y, enemy_robot.x, enemy_robot.y) < 20;
           if (robot_hit) {
-            enemy_robot.hp -= 3;
+            enemy_robot.hp -= 1;//敵方＆我方受到一次攻擊後失血
             enemy_robot.isHit = true;
             Battle.explosions.push({
               x: enemy_robot.x,
